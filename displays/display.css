@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-columns: 25% 200px 25%;
+    grid-template-rows: 200px 200px;
+    /* grid-template: filas / columnas; */
+    grid-template: 300px 100px 100px / 50% 200px 100px;
+}
+
+.item{
+    color: burlywood;
+    background: blanchedalmond;
+    padding: 10px;
+    border: 1px solid red;
+}
+.item:nth-of-type(4){
+    background: salmon;
+    overflow: auto;
+    /* display: inline-grid; */
+    /* display: subgrid; CUANDO ESTE DISPONIBLE HEREDA LA CONFIG DEL PADRE*/
+    display: grid;
+    grid-template: 50px 50px 50px / 200px 200px 200px;
+}
+.item .item{
+    background: cadetblue;
+}
